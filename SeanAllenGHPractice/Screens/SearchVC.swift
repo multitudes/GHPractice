@@ -27,9 +27,8 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    
     
     func createDismissKeyboardTapGesture(){
         let tap = UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing))
@@ -95,7 +94,7 @@ class SearchVC: UIViewController {
 
 extension SearchVC: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        
+        pushFollowerListVC()
         return true
     }
 }
