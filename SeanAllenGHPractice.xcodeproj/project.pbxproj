@@ -22,6 +22,7 @@
 		4595B7A924682A9800B93DFE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7A824682A9800B93DFE /* UIViewController+Ext.swift */; };
 		4595B7B12468442F00B93DFE /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7B02468442F00B93DFE /* Follower.swift */; };
 		4595B7B3246844D000B93DFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7B2246844D000B93DFE /* User.swift */; };
+		45E8CAF924684D0A0042F491 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8CAF824684D0A0042F491 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4595B7A824682A9800B93DFE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4595B7B02468442F00B93DFE /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		4595B7B2246844D000B93DFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		45E8CAF824684D0A0042F491 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		4595B7832467E2B000B93DFE /* SeanAllenGHPractice */ = {
 			isa = PBXGroup;
 			children = (
+				45E8CAF724684CF60042F491 /* Manager */,
 				4595B7AF2468441700B93DFE /* Model */,
 				4595B7AE2468331800B93DFE /* Support */,
 				4595B7AC246832D700B93DFE /* Extensions */,
@@ -140,6 +143,14 @@
 				4595B7B2246844D000B93DFE /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		45E8CAF724684CF60042F491 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				45E8CAF824684D0A0042F491 /* NetworkManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				4595B7A52468216F00B93DFE /* GFBodyLabel.swift in Sources */,
 				4595B7B12468442F00B93DFE /* Follower.swift in Sources */,
 				4595B7A32468200F00B93DFE /* GFTitleLabel.swift in Sources */,
+				45E8CAF924684D0A0042F491 /* NetworkManager.swift in Sources */,
 				4595B7A124681A4000B93DFE /* FollowerListVC.swift in Sources */,
 				4595B7872467E2B000B93DFE /* SceneDelegate.swift in Sources */,
 				4595B79F2467FABB00B93DFE /* GFTextField.swift in Sources */,
