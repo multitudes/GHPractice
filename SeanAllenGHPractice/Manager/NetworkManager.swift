@@ -25,13 +25,14 @@ class NetworkManager {
         }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            //print(data, response, error)
+                        
             if let _ = error {
                 completed(.failure(.invalidResponseFromTheServer))
                 return
             }
+            
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(.failure(.invalidResponseFromTheServer))
+                completed(.failure(.invalidUserName))
                 return
             }
             
