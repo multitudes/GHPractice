@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4582A6142469425C005D73B7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4582A6132469425C005D73B7 /* ErrorMessage.swift */; };
 		4595B7852467E2B000B93DFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7842467E2B000B93DFE /* AppDelegate.swift */; };
 		4595B7872467E2B000B93DFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7862467E2B000B93DFE /* SceneDelegate.swift */; };
 		4595B78E2467E2B400B93DFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4595B78D2467E2B400B93DFE /* Assets.xcassets */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4582A6132469425C005D73B7 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		4595B7812467E2B000B93DFE /* SeanAllenGHPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeanAllenGHPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4595B7842467E2B000B93DFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4595B7862467E2B000B93DFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +59,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4582A61224694237005D73B7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				4582A6132469425C005D73B7 /* ErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		4595B7782467E2B000B93DFE = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +86,7 @@
 		4595B7832467E2B000B93DFE /* SeanAllenGHPractice */ = {
 			isa = PBXGroup;
 			children = (
+				4582A61224694237005D73B7 /* Utilities */,
 				45E8CAF724684CF60042F491 /* Manager */,
 				4595B7AF2468441700B93DFE /* Model */,
 				4595B7AE2468331800B93DFE /* Support */,
@@ -230,6 +241,7 @@
 				4595B7A924682A9800B93DFE /* UIViewController+Ext.swift in Sources */,
 				4595B7852467E2B000B93DFE /* AppDelegate.swift in Sources */,
 				4595B7A7246822B200B93DFE /* GFAlertVC.swift in Sources */,
+				4582A6142469425C005D73B7 /* ErrorMessage.swift in Sources */,
 				4595B7A52468216F00B93DFE /* GFBodyLabel.swift in Sources */,
 				4595B7B12468442F00B93DFE /* Follower.swift in Sources */,
 				4595B7A32468200F00B93DFE /* GFTitleLabel.swift in Sources */,
