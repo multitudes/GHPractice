@@ -9,7 +9,7 @@
 import UIKit
 
 enum ItemInfoType {
-    case repos, gists, follower, following
+    case repos, gists, followers, following
 }
 
 class GFItemInfoView: UIView {
@@ -21,6 +21,7 @@ class GFItemInfoView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        configure()
     }
     
     required init?(coder: NSCoder) {
@@ -55,7 +56,7 @@ class GFItemInfoView: UIView {
         ])
     }
     
-    func set(itemInfoType: ItemInfoType, with count: Int) {
+    func set(itemInfoType: ItemInfoType, withCount count: Int) {
         switch itemInfoType {
             case .repos:
                 symbolImageView.image = UIImage(systemName: SFSymbols.repos)
@@ -63,7 +64,7 @@ class GFItemInfoView: UIView {
             case .gists:
                 symbolImageView.image = UIImage(systemName: SFSymbols.gists)
                 titleLabel.text = "Public Gists"
-            case .follower:
+            case .followers:
                 symbolImageView.image = UIImage(systemName: SFSymbols.followers)
                 titleLabel.text = "Followers"
             case .following:

@@ -13,12 +13,13 @@ class GFButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-        
     }
+    
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     init(backgroundColor: UIColor, title: String) {
         super.init(frame: .zero)
@@ -29,10 +30,16 @@ class GFButton: UIButton {
     
     
     private func configure() {
-        layer.cornerRadius = 10
-        //titleLabel?.textColor = .white
-        setTitleColor(.white, for: .normal)  // this is the correct way to set the text color for a button
-        titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
+        layer.cornerRadius      = 10
+        setTitleColor(.white, for: .normal)
+        titleLabel?.font        = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
     }
+    
+    
+    func set(backgroundColor: UIColor, title: String) {
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
+    }
 }
+
