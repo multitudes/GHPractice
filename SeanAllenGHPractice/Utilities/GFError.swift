@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  SeanAllenGHPractice
 //
-//  Created by Laurent B on 11/05/2020.
+//  Created by Laurent B on 12/05/2020.
 //  Copyright © 2020 Laurent B. All rights reserved.
 //
 

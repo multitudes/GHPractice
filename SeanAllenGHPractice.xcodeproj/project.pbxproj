@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4582A6142469425C005D73B7 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4582A6132469425C005D73B7 /* ErrorMessage.swift */; };
+		453E1C87246AA3B900D06B6E /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E1C86246AA3B900D06B6E /* GFError.swift */; };
 		4582A61724695D89005D73B7 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4582A61624695D89005D73B7 /* FollowerCell.swift */; };
 		4582A61924695E40005D73B7 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4582A61824695E40005D73B7 /* GFAvatarImageView.swift */; };
 		4582A61B24697E64005D73B7 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4582A61A24697E64005D73B7 /* UIHelper.swift */; };
@@ -32,7 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4582A6132469425C005D73B7 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		453E1C86246AA3B900D06B6E /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		4582A61624695D89005D73B7 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		4582A61824695E40005D73B7 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		4582A61A24697E64005D73B7 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -72,8 +72,8 @@
 		4582A61224694237005D73B7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				4582A6132469425C005D73B7 /* ErrorMessage.swift */,
 				4582A61A24697E64005D73B7 /* UIHelper.swift */,
+				453E1C86246AA3B900D06B6E /* GFError.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -305,9 +305,9 @@
 				4582A61B24697E64005D73B7 /* UIHelper.swift in Sources */,
 				4582A61924695E40005D73B7 /* GFAvatarImageView.swift in Sources */,
 				4595B7852467E2B000B93DFE /* AppDelegate.swift in Sources */,
+				453E1C87246AA3B900D06B6E /* GFError.swift in Sources */,
 				4595B7A7246822B200B93DFE /* GFAlertVC.swift in Sources */,
 				4582A61724695D89005D73B7 /* FollowerCell.swift in Sources */,
-				4582A6142469425C005D73B7 /* ErrorMessage.swift in Sources */,
 				4595B7A52468216F00B93DFE /* GFBodyLabel.swift in Sources */,
 				4595B7B12468442F00B93DFE /* Follower.swift in Sources */,
 				4595B7A32468200F00B93DFE /* GFTitleLabel.swift in Sources */,
