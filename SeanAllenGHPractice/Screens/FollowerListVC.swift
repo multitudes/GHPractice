@@ -12,6 +12,8 @@ import UIKit
 protocol FollowerListVCDelegate: class {
     func didRequestFollowers(for username: String)
 }
+
+
 class FollowerListVC: UIViewController {
         
     enum Section {
@@ -47,7 +49,13 @@ class FollowerListVC: UIViewController {
     func configureViewController() {
         view.backgroundColor = .systemBackground
         navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
+        navigationItem.rightBarButtonItem = addButton
     }
+    
+    
+    
     
     func configureCollectionView() {
         collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: UIHelper.createThreeColumnFlowLayout(in: view))
@@ -102,6 +110,11 @@ class FollowerListVC: UIViewController {
             cell.set(follower: follower)
             return cell
         })
+    }
+    
+    
+    @objc func addButtonTapped() {
+        print("ksuydgf")
     }
     
     func updateData(on followers: [Follower]) {

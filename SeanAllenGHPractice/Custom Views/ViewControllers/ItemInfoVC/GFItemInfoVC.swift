@@ -58,7 +58,7 @@ class GFItemInfoVC: UIViewController {
     }
     
     @objc func actionButtonTapped() {
-        
+        // to be filled and overridden in the subclasses
     }
     
     private func layoutUI() {
