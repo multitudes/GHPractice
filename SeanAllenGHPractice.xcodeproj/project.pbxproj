@@ -37,6 +37,7 @@
 		4595B7A924682A9800B93DFE /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7A824682A9800B93DFE /* UIViewController+Ext.swift */; };
 		4595B7B12468442F00B93DFE /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7B02468442F00B93DFE /* Follower.swift */; };
 		4595B7B3246844D000B93DFE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4595B7B2246844D000B93DFE /* User.swift */; };
+		45AF72BA246C3C7700DCAA07 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF72B9246C3C7700DCAA07 /* PersistenceManager.swift */; };
 		45E8CAF924684D0A0042F491 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E8CAF824684D0A0042F491 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		4595B7A824682A9800B93DFE /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		4595B7B02468442F00B93DFE /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		4595B7B2246844D000B93DFE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		45AF72B9246C3C7700DCAA07 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		45E8CAF824684D0A0042F491 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				45E8CAF824684D0A0042F491 /* NetworkManager.swift */,
+				45AF72B9246C3C7700DCAA07 /* PersistenceManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				4582A61924695E40005D73B7 /* GFAvatarImageView.swift in Sources */,
 				4595B7852467E2B000B93DFE /* AppDelegate.swift in Sources */,
 				453E1C87246AA3B900D06B6E /* GFError.swift in Sources */,
+				45AF72BA246C3C7700DCAA07 /* PersistenceManager.swift in Sources */,
 				453E1C97246ADD4400D06B6E /* GFFollowerItemVC.swift in Sources */,
 				453E1C91246ACE1C00D06B6E /* GFItemInfoView.swift in Sources */,
 				4595B7A7246822B200B93DFE /* GFAlertVC.swift in Sources */,
