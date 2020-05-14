@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		451F8B78246D36E400ACB3B3 /* FavoriteCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F8B77246D36E400ACB3B3 /* FavoriteCall.swift */; };
+		451F8B7A246D3E2C00ACB3B3 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451F8B79246D3E2C00ACB3B3 /* FavoriteCell.swift */; };
 		453E1C87246AA3B900D06B6E /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E1C86246AA3B900D06B6E /* GFError.swift */; };
 		453E1C89246AAB8D00D06B6E /* GFUserInfoHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E1C88246AAB8D00D06B6E /* GFUserInfoHeaderVC.swift */; };
 		453E1C8B246AABF700D06B6E /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453E1C8A246AABF700D06B6E /* GFSecondaryTitleLabel.swift */; };
@@ -43,7 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		451F8B77246D36E400ACB3B3 /* FavoriteCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCall.swift; sourceTree = "<group>"; };
+		451F8B79246D3E2C00ACB3B3 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
 		453E1C86246AA3B900D06B6E /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		453E1C88246AAB8D00D06B6E /* GFUserInfoHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderVC.swift; sourceTree = "<group>"; };
 		453E1C8A246AABF700D06B6E /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				4582A61624695D89005D73B7 /* FollowerCell.swift */,
-				451F8B77246D36E400ACB3B3 /* FavoriteCall.swift */,
+				451F8B79246D3E2C00ACB3B3 /* FavoriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -348,11 +348,11 @@
 				453E1C93246AD7B600D06B6E /* GFItemInfoVC.swift in Sources */,
 				453E1C8D246AC0A800D06B6E /* Constants.swift in Sources */,
 				4582A61924695E40005D73B7 /* GFAvatarImageView.swift in Sources */,
-				451F8B78246D36E400ACB3B3 /* FavoriteCall.swift in Sources */,
 				4595B7852467E2B000B93DFE /* AppDelegate.swift in Sources */,
 				453E1C87246AA3B900D06B6E /* GFError.swift in Sources */,
 				45AF72BA246C3C7700DCAA07 /* PersistenceManager.swift in Sources */,
 				453E1C97246ADD4400D06B6E /* GFFollowerItemVC.swift in Sources */,
+				451F8B7A246D3E2C00ACB3B3 /* FavoriteCell.swift in Sources */,
 				453E1C91246ACE1C00D06B6E /* GFItemInfoView.swift in Sources */,
 				4595B7A7246822B200B93DFE /* GFAlertVC.swift in Sources */,
 				4582A61724695D89005D73B7 /* FollowerCell.swift in Sources */,

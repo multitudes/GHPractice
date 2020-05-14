@@ -1,5 +1,5 @@
 //
-//  FavoriteCall.swift
+//  FavoriteCell.swift
 //  SeanAllenGHPractice
 //
 //  Created by Laurent B on 14/05/2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FavoriteCall: UITableViewCell {
+class FavoriteCell: UITableViewCell {
 
     static let reuseID = "FavoriteCell"
     
@@ -49,3 +49,4 @@ class FavoriteCall: UITableViewCell {
         avatarImageView.downloadImage(from: favorite.avatarUrl)
     }
 }
+
