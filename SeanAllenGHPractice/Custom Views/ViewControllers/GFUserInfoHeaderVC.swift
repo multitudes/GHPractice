@@ -46,7 +46,7 @@ class GFUserInfoHeaderVC: UIViewController {
     
         //locationImageView.image = UIImage(systemName: SFSymbols.location)
          
-        let locationImage = (user.location != nil) ? UIImage(systemName: SFSymbols.location) : UIImage(systemName: SFSymbols.noLocation)
+        let locationImage = (user.location != nil) ? SFSymbols.location : UIImage(systemName: "")
         locationImageView.image = locationImage
         locationImageView.tintColor = .secondaryLabel
     }
