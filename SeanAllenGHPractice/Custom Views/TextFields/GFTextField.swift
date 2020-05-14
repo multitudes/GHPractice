@@ -39,6 +39,7 @@ class GFTextField: UITextField {
         returnKeyType = .go
         autocapitalizationType = .none
         
+        clearButtonMode = .whileEditing
         placeholder = "Enter a username"
         #if DEBUG
                 text = "sallen0400"
