@@ -8,23 +8,25 @@
 
 import UIKit
 
-
 protocol GFFollowerItemInfoVCDelegate: class {
     func didTapGetFollowers(for user: User)
 }
+
 
 class GFFollowerItemVC: GFItemInfoVC {
     
     weak var delegate: GFFollowerItemInfoVCDelegate!
     
+    
     init(user: User, delegate: GFFollowerItemInfoVCDelegate) {
            super.init(user: user)
            self.delegate = delegate
        }
-       
-       required init?(coder: NSCoder) {
+    
+    
+    required init?(coder: NSCoder) {
            fatalError("init(coder:) has not been implemented")
-       }
+    }
     
     
     override func viewDidLoad() {
@@ -38,6 +40,7 @@ class GFFollowerItemVC: GFItemInfoVC {
         itemInfoViewTwo.set(itemInfoType: .following, withCount: user.following)
         actionButton.set(backgroundColor: .systemGreen, title: "Get Follower")
     }
+    
     
     override func actionButtonTapped() {
         delegate.didTapGetFollowers(for: user)

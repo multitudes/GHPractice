@@ -21,7 +21,4 @@ extension UITableView {
         tableFooterView = UIView(frame: .zero
         )
     }
-    
-    
-    
 }

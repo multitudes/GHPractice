@@ -32,7 +32,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // windowScene.coordinateSpace.bounds  (0.0, 0.0, 375.0, 667.0)
         
     }
-
     
     
     func configureNavigationBar() {

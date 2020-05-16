@@ -13,6 +13,9 @@ protocol UserInfoVCDelegate: class {
 }
 
 class UserInfoVC: UIViewController {
+        
+    let scrollView = UIScrollView()
+    let contentView = UIView()
     
     let headerView = UIView()
     let itemViewOne = UIView()
@@ -33,13 +36,32 @@ class UserInfoVC: UIViewController {
         layoutUI()
         
         getUserInfo()
-        
+        configureScrollView()
     }
+    
     
     func configureViewController() {
         view.backgroundColor = .systemBackground
         let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
         navigationItem.rightBarButtonItem = doneButton
+    }
+    
+    
+    func configureScrollView() {
+        view.addSubview(scrollView)
+        scrollView.addSubview(contentView)
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.translatesAutoresizingMaskIntoConstraints = false
+        
+        scrollView.pinToEdges(of: view)
+        contentView.pinToEdges(of: scrollView)
+        
+        // content view need to know height and width
+        NSLayoutConstraint.activate([
+            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: 600)
+        ])
     }
     
     
@@ -56,13 +78,13 @@ class UserInfoVC: UIViewController {
         }
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
     
     
     func configureUIElements(with user: User) {
-        
         self.add(childVC: GFRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
         self.add(childVC: GFFollowerItemVC(user: user, delegate: self), to: self.itemViewTwo)
         self.add(childVC: GFUserInfoHeaderVC(user: user), to: self.headerView)
@@ -71,24 +93,23 @@ class UserInfoVC: UIViewController {
     
     
     func layoutUI() {
-        
         let padding: CGFloat = 20
         let itemHeight:CGFloat = 140
         
         itemViews = [headerView, itemViewOne, itemViewTwo, dateLabel]
         
         for itemView in itemViews {
-            view.addSubview(itemView)
+            contentView.addSubview(itemView)
             itemView.translatesAutoresizingMaskIntoConstraints = false
             
             NSLayoutConstraint.activate([
-                itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
-                itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding),
+                itemView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
+                itemView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             ])
         }
         
         NSLayoutConstraint.activate([
-            headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            headerView.topAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.topAnchor),
             headerView.heightAnchor.constraint(equalToConstant: 210),
             
             itemViewOne.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
@@ -104,6 +125,7 @@ class UserInfoVC: UIViewController {
         ])
     }
     
+    
     func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
         containerView.addSubview(childVC.view)
@@ -115,7 +137,6 @@ class UserInfoVC: UIViewController {
 
 extension UserInfoVC: GFRepoItemInfoVCDelegate {
     func didTapGitHubProfile(for user: User) {
-        
         guard let url = URL(string: user.htmlUrl) else {
             presentGFAlertOnMainThread(title: "Invalid URL", message: "The url was attached to this user was invalid", buttonTitle: "OK")
             return
@@ -126,6 +147,7 @@ extension UserInfoVC: GFRepoItemInfoVCDelegate {
 
 
 extension UserInfoVC: GFFollowerItemInfoVCDelegate {
+    
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGFAlertOnMainThread(title: "No Followers", message: "This user has no followers", buttonTitle: "So Sad")
@@ -133,7 +155,6 @@ extension UserInfoVC: GFFollowerItemInfoVCDelegate {
         }
         delegate.didRequestFollowers(for: user.login)
         dismissVC()
-        
     }
 }
 

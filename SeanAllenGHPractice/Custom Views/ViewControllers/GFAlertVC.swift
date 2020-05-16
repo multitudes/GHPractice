@@ -21,6 +21,7 @@ class GFAlertVC: UIViewController {
     
     let padding: CGFloat = 20
     
+    
     init(title: String, message: String, buttonTitle: String) {
         super.init(nibName:nil, bundle: nil)
         self.alertTitle = title
@@ -54,8 +55,8 @@ class GFAlertVC: UIViewController {
         ])
     }
     
+    
     func configureTitleLabel() {
-
         titleLabel.text = alertTitle ?? "Error"
         
         NSLayoutConstraint.activate([
@@ -81,6 +82,7 @@ class GFAlertVC: UIViewController {
             ])
     }
     
+    
     func configureMessageLabel() {
         messageLabel.text = message ?? "Unable to complete request"
         messageLabel.numberOfLines = 4
@@ -92,6 +94,7 @@ class GFAlertVC: UIViewController {
             messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -padding)
         ])
     }
+    
     
     @objc func dismissVC() {
         dismiss(animated: true)

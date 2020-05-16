@@ -21,6 +21,7 @@ class FollowerCell: UICollectionViewCell {
         configure()
     }
     
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -28,13 +29,9 @@ class FollowerCell: UICollectionViewCell {
     
     func set(follower: Follower) {
         usernameLabel.text = follower.login
-        NetworkManager.shared.downloadImage(from: follower.avatarUrl) { [weak self] image in
-            guard let self = self else { return }
-            DispatchQueue.main.async {
-                self.avatarImageView.image = image
-            }
-        }
+        avatarImageView.downloadAvatarImage(fromURL: follower.avatarUrl)
     }
+    
     
     func configure() {
         
@@ -52,8 +49,6 @@ class FollowerCell: UICollectionViewCell {
             usernameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: padding),
             usernameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -padding),
             usernameLabel.heightAnchor.constraint(equalToConstant: 20)
-            
-            
         ])
     }
 }
