@@ -7,8 +7,8 @@ Using the GitHub API, it is built 100% with programmatic UI without storyboards.
 To practice the Sean Allen tutorial I divided the repository in different branches going through the different stage of the project.
 <br>
 <p align="center">
-  <img src="images/GetFollowers1.png" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="images/GetFollowers2.png" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="/images/getfollowers.gif" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="SeanAllenGHPractice/images/GetFollowers1.png" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="SeanAllenGHPractice/images/GetFollowers2.png" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="SeanAllenGHPractice/images/getfollowers.gif" width="230"  title="GetFollowers">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 <br>
