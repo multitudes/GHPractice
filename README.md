@@ -1,6 +1,7 @@
 # GHPractice
 
 To practice the Sean Allen tutorial I divided the repository in different branches going through the different stage of the project.
+
 **The first branch is therefore empty and it builds up from there**
 
 GetFollowers is a typical take home project iOS app created during the Sean Allen's intermediate iOS tutorial ['Take Home Project'](https://seanallen.teachable.com/courses/enrolled/681906). 
